@@ -1,0 +1,115 @@
+#footer {
+	background-color: #333333 !important;
+	position:fixed;
+	}
+	
+.navbar {
+	font-size: 14px;
+	}
+	
+body {
+	background-image:url(../bilder/bg_karo.jpg);
+	}
+	
+#home.jumbotron {
+	padding-top: 60px !important; 
+
+	}
+	
+#basiswissen.jumbotron {
+	padding-top: 60px !important; 
+
+	}
+	
+#lernmodusfrage.jumbotron {
+	padding-top: 60px !important; 
+
+	}
+
+	
+.navbar-brand {
+	color: #008cba !important;
+
+	}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+#footer img {
+	max-width: 100%;
+	height: 45px;
+}
+
+
+
+
+iconsfooter {
+	color: #ffffff !important;
+	font-size: 26px;
+	padding-top:10px !important;
+	margin-top:20px !important;
+	}
+
+#contenth.container {
+	padding: 35px 15px 30px 0 !important;
+	}
+	
+#content.container {
+	padding: 10px 15px 30px 0 !important;
+	}
+	
+.btn-lernmodus {
+	width: 150px;
+	height:80px;
+	margin:5px;
+	padding: 0px;			/*NEU AB NOVEMBER 2018*/
+	white-space: normal;	/*NEU AB NOVEMBER 2018*/
+	}
+
+.btn-lernmodusmix {
+	width: 315px;
+    height: 80px;
+    margin: 5px 0px 0px 5px;
+	}
+
+.check {
+	color:#ca200a;
+	padding-left:10px;
+	}
+.popover-content {
+	white-space: nowrap;
+}
+
+.panel-default .panel-title
+{
+    padding: 0;
+}
+
+.panel-default .panel-title a
+{
+    display: block;
+}
+
+.logo {
+	float:left;
+	padding-top:8px;
+	}
+	
+.impressum {
+	padding-left:50px;
+	font-size:12px;
+	}
+
+input {
+	color:#bababa;
+}
+input:focus {
+	color:#333;
+}
+
+.alert-neutral {
+	background-color: #e9e9e9;
+	border:1px solid #c7c7c7;
+}

@@ -1,0 +1,104 @@
+%%% Wolfgang Konen
+%%% April 2016
+%%%
+%%% Cut out the relevant region from the slide and save it as formelsammlung.jpg with an image editor.
+%%%
+\documentclass[xcolor=dvipsnames,11pt]{beamer}   % 
+\usepackage{booktabs}
+\usepackage{eurosym}
+\usepackage{BeamerColor}
+\usepackage{color}
+\usepackage{lmodern}
+\usepackage{algpseudocode}
+%\usepackage{garamond}
+%\usepackage{ngerman}
+\usepackage[utf8x]{inputenc}
+\usepackage{tikz}
+\usepackage{hyperref}					% \href, \hyperlink
+%\usepackage[ngerman]{babel}   % for \glqq, \grqq, ... % Problems with MikTex package manager: babel-ngerman not found on server
+\usepackage{graphicx}					% \resizebox
+\usepackage[framemethod=TikZ]{mdframed}  % colored boxes
+%\usepackage[table]{xcolor}     % tables with \cellcolor{black!10},  http://ctan.org/pkg/xcolor
+%\usepackage{colortbl}					% tables with \rowcolor or \cellcolor{black!10}
+%\usepackage{tabularx}					% tables with \rowcolor
+
+% \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{symbols}{}
+\definecolor{fhgray}{RGB}{114,108,126}
+
+%\usecolortheme[named=OrangeRed2]{structure}
+%\setbeamercolor{frametitle}{fg=white,bg=OrangeRed2}
+%\setbeamercolor{title}{fg=white,bg=OrangeRed2 }
+%\usefonttheme[frametitle]{structurebold}
+\usecolortheme[named=RoyalBlue]{structure}
+\setbeamercolor{frametitle}{fg=white,bg=RoyalBlue}
+\setbeamercolor{title}{fg=white,bg=RoyalBlue }
+\usefonttheme[frametitle]{structurebold}
+
+
+%\usetheme{Boadilla}
+\usetheme{Madrid}
+
+% Header with running section / subsection
+\setbeamertemplate{headline}  % has to come *** after ***  \usetheme (!!)
+{
+\leavevmode%
+\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex]{section in head/foot}%
+\hbox to .5\paperwidth{\hfil\insertsectionhead\hfil}
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex]{subsection in head/foot}%
+\hbox to .5\paperwidth{\hfil\insertsubsectionhead\hfil}
+\end{beamercolorbox}%
+}
+
+\newcommand{\etal}{\emph{et al.} }
+\newcommand{\matE}{\mathbf{E}}
+\newcommand{\matV}{\mathbf{V}}
+\newcommand{\intII}{\int \limits_{-\infty}^{\infty}}
+\newcommand{\WK}[1]{\textcolor{blue} #1}
+%\newcommand{\WK}[1]{}
+
+\renewcommand{\tablename}{\small{Tabelle}}
+\renewcommand{\figurename}{\small{Abbildung}}
+\renewcommand{\rmdefault}{ugm}
+\setlength{\parskip}{1.5ex plus0.5ex minus0.5ex}
+
+
+%------------------------------------------------------------------------75
+%------------------------------------------------------------------------75
+%------------------------------------------------------------------------75
+\begin{document}
+
+%------------------------------------------------------------------------75
+\begin{frame}
+\frametitle{Formulary}
+		Permutation $P_n$: $n! = n*(n-1)*(n-2)*\ldots*2*1$
+\vspace*{0.3cm} 
+
+\begin{tabular}{|l||c|c|} \hline
+										  & Variation 				   & Combination \\
+%										  & {\footnotesize (order important)} & {\footnotesize (order unimportant)} \\ 
+											\hline\hline
+	with repetition     & $n^k$                & $\left(\begin{matrix} n+k-1 \\ k \end{matrix}\right)$ \\ \hline	
+	without  repetition & $\dfrac{n!}{(n-k)!}$ & $\dfrac{n!}{(n-k)!k!}=\left(\begin{matrix} n \\ k \end{matrix}\right)$ \\ \hline
+\end{tabular}
+\end{frame} 
+
+%------------------------------------------------------------------------75
+\begin{frame}
+\frametitle{Formelsammlung}
+		Permutation $P_n$: $n! = n*(n-1)*(n-2)*\ldots*2*1$
+\vspace*{0.3cm} 
+
+\begin{tabular}{|l||c|c|} \hline
+										& Variation 				   & Kombination \\
+%										& {\footnotesize (Reihenfolge } & {\footnotesize (Reihenfolge } \\ 
+%										& {\footnotesize wichtig)} & {\footnotesize  egal)} \\ 
+										\hline\hline
+	mit Wiederholung  & $n^k$                & $\left(\begin{matrix} n+k-1 \\ k \end{matrix}\right)$ \\ \hline	
+	ohne Wiederholung & $\dfrac{n!}{(n-k)!}$ & $\dfrac{n!}{(n-k)!k!}=\left(\begin{matrix} n \\ k \end{matrix}\right)$ \\ \hline
+\end{tabular}
+\end{frame} 
+
+\end{document} 
+

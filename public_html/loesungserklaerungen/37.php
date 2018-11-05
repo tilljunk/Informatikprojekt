@@ -1,0 +1,1 @@
+<img src="./bilder/loesungserklaerungen/loesungserklaerung_37.jpg">

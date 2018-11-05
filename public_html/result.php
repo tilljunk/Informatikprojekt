@@ -76,8 +76,6 @@ function get_right_answer($counter, $input, $type, $cat){
                     $part1 = eval('return '.$part1.';');
                     $part1 = fak($part1);
 
-
-
                     $part2 = substr($calculation[1],0,-1);
                     $part2 = eval('return '.$part2.';');
                     $part2 = fak($part2);
